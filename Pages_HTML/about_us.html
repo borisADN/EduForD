@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+        <title>En Savoir Plus</title>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="/IMAGES/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="./index.html">ACCUEIL</a></li>
+                        <li><a href="./candidate.html">CANDIDATER</a></li>
+                        <li><a href="./documentation.html">DOCUMENTATION</a></li>
+                        <li><a href="./about_us.html">EN SAVOIR PLUS</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Notre Histoire</h1>
+        </section>
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="/IMAGES/certificate.jpg" alt>
+                    <h2>Tout est né de la vision d'une seule personne...</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Ullam maxime sapiente soluta, nam vitae eligendi
+                        doloribus modi, incidunt reprehenderit at fugit
+                        quibusdam molestiae iusto facere ut veniam maiores,
+                        inventore rerum?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quis commodi voluptates expedita nostrum officia,
+                        eligendi
+                        architecto at excepturi repudiandae obcaecati eum modi
+                        consequatur reiciendis ea beatae? Illo ut quod
+                        delectus.</p>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quis commodi voluptates expedita nostrum officia,
+                        eligendi
+                        architecto at excepturi repudiandae obcaecati eum modi
+                        consequatur reiciendis ea beatae? Illo ut quod
+                        delectus.</p>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quis commodi voluptates expedita nostrum officia,
+                        eligendi
+                        architecto at excepturi repudiandae obcaecati eum modi
+                        consequatur reiciendis ea beatae? Illo ut quod
+                        delectus.</p>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Quis commodi voluptates expedita nostrum officia,
+                        eligendi
+                        architecto at excepturi repudiandae obcaecati eum modi
+                        consequatur reiciendis ea beatae? Illo ut quod
+                        delectus.
+                    </p>   
+                    <div class="comment-box">
+                            <h3>Nous Laisser Un commentaire</h3>
+                            <form class="comment-form">
+                                    <input type="text" placeholder="Votre Nom">
+                                    <input type="email" placeholder="Votre Email">
+                                    <textarea rows="5" placeholder="Votre Commentaire"></textarea>
+                                    <button type="submit" class="hero-btn red-btn">POSTER</button>
+                            </form>
+                    </div>
+                </div>
+                <div class="blog-right">
+                    <h3>Divers Resultats</h3>
+                    <div>
+                        <span>Computer science</span>
+                        <span>34</span>
+                    </div>
+                    <div>
+                        <span>Business analytics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>AutoCad</span>
+                        <span>42</span>
+                    </div>
+                    <div>
+                        <span>Data Science </span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>Journalisme</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>15</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <h4>A Propos de nous...</h4>
+
+            <div class="icons">
+                <i class="fab fa-facebook-f fa-lg  "></i>
+                <i class="fab fa-instagram fa-lg  "></i>
+                <i class="fab fa-linkedin-in fa-lg  "></i>
+                <p>Made by Boris <i class="fa fa-heart"></i></p>
+            </section>
+            <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right ="0";
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px";
+            }
+        </script>
+        </body>
+    </html>

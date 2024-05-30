@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+        <title>Candidater</title>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="/IMAGES/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="./index.html">ACCUEIL</a></li>
+                        <li><a href="./candidate.html">CANDIDATER</a></li>
+                        <li><a href="./documentation.html">DOCUMENTATION</a></li>
+                        <li><a href="./about_us.html">EN SAVOIR PLUS</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Soumettre Une Candidature</h1>
+        </section>
+        <div class="contact-col">
+            <p>Voulez vous devenir l'un de nos apprenants?</p>
+            <form>
+                <input type="text" placeholder="Votre Nom" required>
+                <input type="text" placeholder="Votre Prenom" required>
+                <input type="email" placeholder="Votre Email" required>
+                <input type="date" placeholder="Votre Date de naissance complet" required>
+                <input type="text" placeholder="Votre Lieu De naissance"  required>
+                <input type="text" placeholder="Votre Nationalité" required>
+                <label for="">Envoyer nous votre CV</label>
+                <input type="file" >
+                <input type="text" placeholder="Vos diplomes et annee d'obtention" required>
+                <button type="submit" class="hero-btn red-btn"> SOUMETTRE</button>
+            </form>
+    </div>
+
+        <section class="footer">
+            <h4>A Propos de nous</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quis commodi voluptates expedita nostrum officia, eligendi
+                architecto at excepturi repudiandae obcaecati eum modi
+                consequatur reiciendis ea beatae? Illo ut quod delectus.</p>
+            <div class="icons">
+                <i class="fab fa-facebook-f fa-lg  "></i>
+                <i class="fab fa-instagram fa-lg  "></i>
+                <i class="fab fa-linkedin-in fa-lg  "></i>
+                <p>Made by Boris <i class="fa fa-heart"></i></p>
+            </section>
+            <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right ="0";
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px";
+            }
+        </script>
+        </body>
+    </html>
